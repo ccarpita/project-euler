@@ -9,7 +9,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 # Solution
 
-<code>
+<pre>
 gcc solve.c -o solve
 ./solve
-</code>
+</pre>
