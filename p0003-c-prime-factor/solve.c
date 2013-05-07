@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 
 /* determine the maximum prime factor of a large number */
+
 
 void main() {
     
@@ -21,14 +23,17 @@ void main() {
 }
 
 int is_prime(int i) {
-    int j = 2;
+    if (i == 2) {
+        return 1;
+    }
+    int j = 3;
     int isp = 1;
-    while (j < i) {
+    while (j < sqrt(i)) {
         if (i % j == 0) { 
             isp = 0;
             break; 
         }
-        j++;
+        j += 2;
     } 
     return isp;
 }

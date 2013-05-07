@@ -8,6 +8,6 @@ What is the largest prime factor of the number 600851475143?
 # Solution
 
 <pre>
-gcc solve.c -o solve
+gcc -lm solve.c -o solve
 ./solve
 </pre>
