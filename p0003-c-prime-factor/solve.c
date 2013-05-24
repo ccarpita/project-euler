@@ -28,7 +28,7 @@ int is_prime(int i) {
     }
     int j = 3;
     int isp = 1;
-    while (j < sqrt(i)) {
+    while (j <= sqrt(i)) {
         if (i % j == 0) { 
             isp = 0;
             break; 
